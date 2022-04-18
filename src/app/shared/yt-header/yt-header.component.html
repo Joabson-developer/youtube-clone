@@ -65,5 +65,45 @@
   </div>
 
   <!-- end -->
-  <div class="yt-header__end">end</div>
+  <div class="yt-header__end">
+    <mat-icon
+      class="yt-header__end__button-camera"
+      tooltip-target="create"
+      aria-hidden="false"
+      aria-label="Criar"
+    >
+      video_camera_front
+    </mat-icon>
+    <yt-tootip idTootip="create" text="Criar"></yt-tootip>
+
+    <mat-icon
+      class="yt-header__end__button-apps"
+      tooltip-target="apps"
+      aria-hidden="false"
+      aria-label="Aplicativos do YouTube"
+    >
+      apps
+    </mat-icon>
+    <yt-tootip idTootip="apps" text="Aplicativos do YouTube"></yt-tootip>
+
+    <div class="yt-header__end__notifications">
+      <mat-icon
+        class="yt-header__end__notifications__button"
+        tooltip-target="notifications"
+        aria-hidden="false"
+        aria-label="Notificações"
+      >
+        notifications
+      </mat-icon>
+      <yt-tootip idTootip="notifications" text="Notificações"></yt-tootip>
+
+      <span class="yt-header__end__notifications__notify">9</span>
+    </div>
+
+    <img
+      class="yt-header__end__button-user-avatar"
+      src="./assets/user-avatar.jpg"
+      alt="Imagem do usuário"
+    />
+  </div>
 </header>

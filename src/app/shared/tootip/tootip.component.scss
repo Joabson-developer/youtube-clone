@@ -10,6 +10,8 @@
   color: #fffe;
   border-radius: 2px;
   position: fixed;
+  left: 0;
+  top: 0;
   opacity: 0;
   transition: $transition_default;
 }
