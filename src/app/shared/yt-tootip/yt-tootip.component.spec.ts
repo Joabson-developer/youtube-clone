@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TootipComponent } from './tootip.component';
+import { YtTootipComponent } from './yt-tootip.component';
 
-describe('TootipComponent', () => {
-  let component: TootipComponent;
-  let fixture: ComponentFixture<TootipComponent>;
+describe('YtTootipComponent', () => {
+  let component: YtTootipComponent;
+  let fixture: ComponentFixture<YtTootipComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TootipComponent ]
-    })
-    .compileComponents();
+      declarations: [YtTootipComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TootipComponent);
+    fixture = TestBed.createComponent(YtTootipComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

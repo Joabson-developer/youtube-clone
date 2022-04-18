@@ -1,14 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { YtHeaderComponent } from './yt-header/yt-header.component';
+// Modules
 import { MatIconModule } from '@angular/material/icon';
-import { TootipComponent } from './tootip/tootip.component';
+
+// Directives
 import { TooltipTargetDirective } from '../directives/tooltip-target/tooltip-target.directive';
 
+// Components
+import { YtHeaderComponent } from './yt-header/yt-header.component';
+import { YtTootipComponent } from './yt-tootip/yt-tootip.component';
+import { YtAsideComponent } from './yt-aside/yt-aside.component';
+
 @NgModule({
-  declarations: [YtHeaderComponent, TootipComponent, TooltipTargetDirective],
+  declarations: [
+    TooltipTargetDirective,
+    YtHeaderComponent,
+    YtTootipComponent,
+    YtAsideComponent,
+  ],
   imports: [CommonModule, MatIconModule],
-  exports: [YtHeaderComponent, TootipComponent],
+  exports: [YtHeaderComponent, YtTootipComponent, YtAsideComponent],
 })
 export class SharedModule {}
