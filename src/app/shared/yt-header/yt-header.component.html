@@ -20,8 +20,7 @@
     <div class="yt-header__center__searchbox">
       <div class="searchbox__content {{ hasFocus ? 'has-focus' : '' }}">
         <mat-icon
-          *ngIf="hasFocus"
-          class="searchbox__content__icon-search"
+          class="searchbox__content__icon-search {{ hasFocus ? 'active' : '' }}"
           aria-hidden="true"
         >
           search

@@ -62,7 +62,14 @@
 
         &__icon-search {
           color: #aaa;
+          padding: 0;
+          width: 0;
+          transition: $transition_default;
+        }
+        &__icon-search.active {
+          color: #aaa;
           padding: 0 5px;
+          width: initial;
         }
 
         &__input {
