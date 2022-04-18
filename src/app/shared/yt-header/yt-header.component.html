@@ -1,1 +1,62 @@
-<p>yt-header works!</p>
+<header class="yt-header">
+  <!-- start -->
+  <div class="yt-header__start">
+    <mat-icon
+      class="yt-header__start__button"
+      aria-hidden="false"
+      aria-label="Menu inicial"
+    >
+      menu
+    </mat-icon>
+    <a class="yt-header__start__link" href="/">
+      <img src="./assets/yt-logo.png" alt="Logo do YouTube" />
+    </a>
+
+    <span class="yt-header__start__language">BR</span>
+  </div>
+
+  <!-- center -->
+  <div class="yt-header__center">
+    <div class="yt-header__center__searchbox">
+      <div class="searchbox__content {{ hasFocus ? 'has-focus' : '' }}">
+        <mat-icon
+          *ngIf="hasFocus"
+          class="searchbox__content__icon-search"
+          aria-hidden="true"
+        >
+          search
+        </mat-icon>
+        <input
+          class="searchbox__content__input"
+          type="text"
+          placeholder="Pesquisar"
+          (focus)="toggleFocus()"
+          (blur)="toggleFocus()"
+        />
+        <mat-icon
+          class="searchbox__content__keyboard"
+          aria-hidden="false"
+          aria-label="Teclado virtual"
+        >
+          keyboard
+        </mat-icon>
+      </div>
+
+      <button
+        class="yt-header__center__button-search"
+        tooltip-target="pesquisar"
+      >
+        <mat-icon class="" aria-hidden="false" aria-label="Buscar">
+          search
+        </mat-icon>
+      </button>
+      <yt-tootip id="pesquisar" text="Pesquisar"></yt-tootip>
+    </div>
+    <mat-icon class="" aria-hidden="false" aria-label="Microfone">
+      mic
+    </mat-icon>
+  </div>
+
+  <!-- end -->
+  <div class="yt-header__end">end</div>
+</header>
