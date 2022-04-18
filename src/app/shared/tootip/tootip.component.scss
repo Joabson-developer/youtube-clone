@@ -1,3 +1,5 @@
+@import "../../../scss/base/variables";
+
 .yt-tootip {
   background: #0009;
   display: flex;
@@ -8,5 +10,6 @@
   color: #fffe;
   border-radius: 2px;
   position: fixed;
-  display: none;
+  opacity: 0;
+  transition: $transition_default;
 }

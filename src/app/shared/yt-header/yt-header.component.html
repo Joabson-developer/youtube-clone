@@ -42,19 +42,26 @@
         </mat-icon>
       </div>
 
-      <button
+      <mat-icon
         class="yt-header__center__button-search"
-        tooltip-target="pesquisar"
+        tooltip-target="search"
+        aria-hidden="false"
+        aria-label="Buscar"
       >
-        <mat-icon class="" aria-hidden="false" aria-label="Buscar">
-          search
-        </mat-icon>
-      </button>
-      <yt-tootip idTootip="pesquisar" text="Pesquisar"></yt-tootip>
+        search
+      </mat-icon>
+
+      <yt-tootip idTootip="search" text="Pesquisar"></yt-tootip>
     </div>
-    <mat-icon class="" aria-hidden="false" aria-label="Microfone">
+    <mat-icon
+      class="yt-header__center__button-search-voice"
+      tooltip-target="searchVoice"
+      aria-hidden="false"
+      aria-label="Pesquisar com sua voz"
+    >
       mic
     </mat-icon>
+    <yt-tootip idTootip="searchVoice" text="Pesquisar com sua voz"></yt-tootip>
   </div>
 
   <!-- end -->
