@@ -1,0 +1,108 @@
+<header class="yt-header">
+  <!-- start -->
+  <div class="yt-header__start">
+    <mat-icon
+      class="yt-header__start__button"
+      aria-hidden="false"
+      aria-label="Menu inicial"
+    >
+      menu
+    </mat-icon>
+    <a class="yt-header__start__link" href="/">
+      <img src="./assets/yt-logo.png" alt="Logo do YouTube" />
+    </a>
+
+    <span class="yt-header__start__language">BR</span>
+  </div>
+
+  <!-- center -->
+  <div class="yt-header__center">
+    <div class="yt-header__center__searchbox">
+      <div class="searchbox__content {{ hasFocus ? 'has-focus' : '' }}">
+        <mat-icon
+          class="searchbox__content__icon-search {{ hasFocus ? 'active' : '' }}"
+          aria-hidden="true"
+        >
+          search
+        </mat-icon>
+        <input
+          class="searchbox__content__input"
+          type="text"
+          placeholder="Pesquisar"
+          (focus)="toggleFocus()"
+          (blur)="toggleFocus()"
+        />
+        <mat-icon
+          class="searchbox__content__keyboard"
+          aria-hidden="false"
+          aria-label="Teclado virtual"
+        >
+          keyboard
+        </mat-icon>
+      </div>
+
+      <mat-icon
+        class="yt-header__center__button-search"
+        tooltip-target="search"
+        aria-hidden="false"
+        aria-label="Buscar"
+      >
+        search
+      </mat-icon>
+
+      <yt-tootip idTootip="search" text="Pesquisar"></yt-tootip>
+    </div>
+    <mat-icon
+      class="yt-header__center__button-search-voice"
+      tooltip-target="searchVoice"
+      aria-hidden="false"
+      aria-label="Pesquisar com sua voz"
+    >
+      mic
+    </mat-icon>
+    <yt-tootip idTootip="searchVoice" text="Pesquisar com sua voz"></yt-tootip>
+  </div>
+
+  <!-- end -->
+  <div class="yt-header__end">
+    <mat-icon
+      class="yt-header__end__button-camera"
+      tooltip-target="create"
+      aria-hidden="false"
+      aria-label="Criar"
+    >
+      video_camera_front
+    </mat-icon>
+    <yt-tootip idTootip="create" text="Criar"></yt-tootip>
+
+    <mat-icon
+      class="yt-header__end__button-apps"
+      tooltip-target="apps"
+      aria-hidden="false"
+      aria-label="Aplicativos do YouTube"
+    >
+      apps
+    </mat-icon>
+    <yt-tootip idTootip="apps" text="Aplicativos do YouTube"></yt-tootip>
+
+    <div class="yt-header__end__notifications">
+      <mat-icon
+        class="yt-header__end__notifications__button"
+        tooltip-target="notifications"
+        aria-hidden="false"
+        aria-label="Notificações"
+      >
+        notifications
+      </mat-icon>
+      <yt-tootip idTootip="notifications" text="Notificações"></yt-tootip>
+
+      <span class="yt-header__end__notifications__notify">9</span>
+    </div>
+
+    <img
+      class="yt-header__end__button-user-avatar"
+      src="./assets/user-avatar.jpg"
+      alt="Imagem do usuário"
+    />
+  </div>
+</header>

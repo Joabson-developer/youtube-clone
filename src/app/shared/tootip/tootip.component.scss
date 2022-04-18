@@ -1,0 +1,17 @@
+@import "../../../scss/base/variables";
+
+.yt-tootip {
+  background: #0009;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  padding: 10px 15px;
+  color: #fffe;
+  border-radius: 2px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: $transition_default;
+}
